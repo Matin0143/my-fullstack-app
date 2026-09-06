@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
 
-app = Flask(__name__)
+app = Flask(__my-fullstack-ap__)
 
 @app.route("/")
 def home():
@@ -14,5 +14,5 @@ def hello():
         "message": "Hello from Flask API"
     })
 
-if __name__ == "__main__":
+if __my-fullstack-ap__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
