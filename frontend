@@ -1,0 +1,17 @@
+# my-fullstack-app
+my-fullstack-app
+
+my-fullstack-app/
+│
+├── frontend/
+│   ├── package.json
+│   ├── server.js
+│   └── ...
+│
+├── backend/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── ...
+│
+└── Jenkinsfile
+
