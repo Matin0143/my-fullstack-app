@@ -1,0 +1,13 @@
+[Unit]
+Description=Flask Backend
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/opt/my-fullstack-app/backend
+Environment="PATH=/opt/my-fullstack-app/backend/venv/bin"
+ExecStart=/opt/my-fullstack-app/backend/venv/bin/gunicorn --workers 3 --bind 127.0.0.1:5000 app:app
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
